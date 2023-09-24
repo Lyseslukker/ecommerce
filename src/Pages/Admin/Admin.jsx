@@ -1,7 +1,16 @@
-import React from 'react'
+import React, {useEffect} from 'react'
 import "./Admin.css"
 
 export default function Admin() {
+
+
+    useEffect(() => {
+        fetch("https://api.smarcog.dk")
+            .then(response => response.json())
+            .then((data) => {
+                console.log(data)
+            })
+    }, []);
     
     
     return (
