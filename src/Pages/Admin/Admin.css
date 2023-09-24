@@ -1,0 +1,23 @@
+.admin {
+    min-height: 100vh;
+    padding: 5vh 2.5vw;
+
+    > h1 { 
+        text-align: center; 
+        padding: 2.5vh 0;
+    }
+
+    > form {
+        padding: 2.5vh 0;
+        display: grid;
+
+        > input {
+            padding: 2.5vw;
+            margin: 2.5vw 0;
+            border-radius: 0.5rem;
+            border: none;
+            filter: drop-shadow(1px 2px 5px var(--light-shadow));
+            color: var(--main-color)
+        }
+    }
+}

@@ -1,0 +1,16 @@
+.home {
+    min-height: 100vh;
+    padding: 5vh 2.5vw;
+    
+    > h1 {
+        display: grid;
+        grid-auto-flow: column;
+        align-content: center;
+        justify-content: left;
+        column-gap: 2.5vw;
+
+        > :last-child {
+            color: var(--main-color)
+        }
+    }
+}

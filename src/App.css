@@ -1,15 +1,104 @@
 :root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
+  --main-color: #4BA44B;
+  --light-background: #FAFCFA;
+  --light-shadow: #DBE2EA;
+  --regular-fontcolor: #0E110E;
+  --dark-background: #2C2738;
+}
 
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+}
 
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-text-size-adjust: 100%;
+img {
+  display: block;
+  width: 100%;
+}
+
+.app_light {
+  background-color: var(--light-background);
+}
+
+
+.mobile_navigation_hidden {
+  position: absolute;
+  z-index: 10;
+  top: 0;
+  left: -100vw;
+  background-color: var(--light-background);
+  height: 100vh;
+  width: 100vw;
+  transition: 250ms;
+}
+
+.mobile_navigation_show {
+  position: absolute;
+  z-index: 10;
+  top: 0;
+  left: 0;
+  background-color: var(--light-background);
+  height: 100vh;
+  width: 100vw;
+  transition: 400ms;
+}
+
+
+
+@media screen and (min-width: 300px) {
+  h1 {font-size: 10vw;}
+  h2 {font-size: 8vw;}
+  h3 {font-size: 6.5vw;}
+  h4 {font-size: 5vw;}
+  p {
+    font-size: 4vw;
+    line-height: 1.5;
+  }
+  a {font-size: 4vw;}
+  label {font-size: 5vw;}
+  input {font-size: 4vw;}
+}
+
+@media screen and (min-width: 768px) {
+  h1 { font-size: 4vw; }
+  h2 { font-size: 3.6vw; }
+  h3 { font-size: 3.2vw; }
+  h4 { font-size: 2.8vw; }
+  h5 { font-size: 2.4vw; }
+  h6 { font-size: 2vw; }
+  p  { 
+    font-size: 1.8vw; 
+    line-height: 1.5;
+  }
+  a  { font-size: 1.8vw; }
+}
+
+@media screen and (min-width: 992px) {
+  h1 { font-size: 3vw; }
+  h2 { font-size: 2.7vw; }
+  h3 { font-size: 2.4vw; }
+  h4 { font-size: 2.1vw; }
+  h5 { font-size: 1.8vw; }
+  h6 { font-size: 1.5vw; }
+  p  { 
+    font-size: 1.4vw; 
+    line-height: 1.5;
+  }
+  a  { font-size: 1.4vw; }
+}
+
+@media screen and (min-width: 1200px) {
+  h1 { font-size: 2.5vw; }
+  h2 { font-size: 2.3vw; }
+  h3 { font-size: 2.1vw; }
+  h4 { font-size: 1.9vw; }
+  h5 { font-size: 1.7vw; }
+  h6 { font-size: 1.5vw; }
+  p  { 
+    font-size: 1.3vw; 
+    line-height: 1.5;
+  }
+  a  { font-size: 1.3vw; }
 }

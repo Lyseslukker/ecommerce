@@ -1,0 +1,26 @@
+.navigation {
+    height: 8vh;
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 0 5vw;
+    align-items: center;
+
+    > a {
+        font-size: 8vw;
+        display: grid;
+        align-content: center;
+    }
+    > a:first-child {
+        justify-self: left;
+        color: var(--main-color);
+    }
+    > a:nth-child(2) {
+        justify-self: center;
+        color: var(--main-color);
+    }
+    > a:last-child {
+        justify-self: right;
+        color: var(--regular-fontcolor);
+    }
+}
