@@ -1,0 +1,140 @@
+@media screen and (min-width: 300px) {
+    .checkout {
+        min-height: vh;
+
+        > h1 {
+            text-align: center;
+            margin: 10vw 0;
+        }
+        > form {
+            display: grid;
+            padding: 2.5vw;
+            row-gap: 3.5vw;
+    
+            > .email, .name {
+                display: grid;
+                row-gap: 1.8vw;
+                
+    
+                > input {
+                    padding: 2.5vw;
+                    border-radius: 1vw;
+                    border: none;
+                    box-shadow: 0.5vw 0.5vw 20px -10px black;
+                }
+            }
+    
+            > button {
+                display: grid;
+                place-content: center;
+                margin: 2.5vw 0;
+                padding: 3.5vw 0;
+                width: 100%;
+                text-decoration: none;
+                border: solid 2px var(--main-color);
+                background-color: var(--background-main);
+                color: var(--main-color);
+                border-radius: 1vw;
+                font-weight: 500;
+                font-size: 3.5vw;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .checkout {
+        min-height: 80vh;
+
+        > h1 {
+            text-align: center;
+            margin: 10vw 0;
+        }
+        > form {
+            display: grid;
+            padding: 2.5vw;
+            row-gap: 3.5vw;
+    
+            > .email, .name {
+                display: grid;
+                row-gap: 1.8vw;
+                
+                > label {
+                    font-size: 3vw;
+                }
+                > input {
+                    padding: 2.5vw;
+                    border-radius: 1vw;
+                    border: none;
+                    box-shadow: 0.5vw 0.5vw 20px -10px black;
+                    font-size: 3vw;
+                }
+            }
+    
+            > button {
+                display: grid;
+                place-content: center;
+                margin: 2.5vw 0;
+                padding: 3.5vw 0;
+                width: 100%;
+                text-decoration: none;
+                border: solid 2px var(--main-color);
+                background-color: var(--background-main);
+                color: var(--main-color);
+                border-radius: 1vw;
+                font-weight: 500;
+                font-size: 3.5vw;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .checkout {
+        padding: 0 20vw;
+        min-height: 85vh;
+
+        > h1 {
+            text-align: center;
+            margin: 5vw 0;
+            font-size: 3.5vw;
+        }
+        > form {
+            display: grid;
+            padding: 0;
+            row-gap: 1vw;
+    
+            > .email, .name {
+                display: grid;
+                row-gap: 1.8vw;
+                
+                > label {
+                    font-size: 2vw;
+                }
+                > input {
+                    font-size: 1.5vw;
+                    padding: 1.5vw;
+                    border-radius: 1vw;
+                    border: none;
+                    box-shadow: 0.5vw 0.5vw 20px -10px black;
+                }
+            }
+    
+            > button {
+                display: grid;
+                place-content: center;
+                margin: 2.5vw 0;
+                padding: 1.5vw 0;
+                width: 100%;
+                text-decoration: none;
+                border: solid 2px var(--main-color);
+                background-color: var(--background-main);
+                color: var(--main-color);
+                border-radius: 1vw;
+                font-weight: 500;
+                font-size: 1.5vw;
+            }
+        }
+    }
+}
+

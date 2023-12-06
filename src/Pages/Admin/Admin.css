@@ -1,23 +1,471 @@
-.admin {
-    min-height: 100vh;
-    padding: 5vh 2.5vw;
-
-    > h1 { 
-        text-align: center; 
-        padding: 2.5vh 0;
+/*=====  COMMON  ======*/
+@media screen and (min-width: 300px) {
+    .admin {
+        min-height: 92vh;
+        padding: 5vh 2.5vw;
+    
+        > h1 { 
+            text-align: center; 
+            padding: 2.5vh 0;
+        }
+    
+        > .admin__addProduct {
+    
+            > form {
+                display: grid;
+            }
+        }
+    
+        > .admin__panel {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1rem;
+            margin: 10vw 0;
+    
+            > button {
+                padding: 3.5vw 0;
+                border: none;
+                background-color: transparent;
+                border-radius: 0.25rem;
+                font-size: 3.5vw;
+            }
+    
+    
+            > .panel__add {
+                border: solid 2px var(--main-color);
+                background-color: var(--background-main);
+                color: var(--regular-fontcolor);
+                /* color: white; */
+            }
+            > .panel__remove {
+                border: solid 2px var(--regular-red);
+                background-color: var(--background-red);
+                color: var(--regular-fontcolor);
+            }
+            > .panel__order {
+                grid-column: 1/3;
+                background-color: var(--main-color);
+                color: white;
+            }
+        }
     }
-
-    > form {
-        padding: 2.5vh 0;
-        display: grid;
-
-        > input {
-            padding: 2.5vw;
-            margin: 2.5vw 0;
-            border-radius: 0.5rem;
-            border: none;
-            filter: drop-shadow(1px 2px 5px var(--light-shadow));
-            color: var(--main-color)
+    
+    
+    
+    /*=====  ADD Products  ======*/
+    .admin__addProduct {
+    
+        > form {
+            display: grid;
+            row-gap: 1vw;
+    
+            > input {
+                padding: 2.5vw;
+                margin: 2.5vw 0;
+                border-radius: 0.25rem;
+                border: none;
+                filter: drop-shadow(1px 2px 5px var(--light-shadow));
+                color: var(--main-color)
+            }
+    
+            > .inputfile {
+                width: 0.1px;
+                height: 0.1px;
+                opacity: 0;
+                overflow: hidden;
+                position: absolute;
+                z-index: -1;
+            }
+            > .labelfile {
+                border: solid 2px var(--main-color);
+                /* background-color: var(--background-main); */
+                color: var(--main-color);
+                padding: 2.5vw 0;
+                display: grid;
+                place-content: center;
+                font-size: 2rem;
+            }
+            > button {
+                margin: 5vw 0;
+                border: none;
+                background-color: var(--main-color);
+                color: white;
+                border-radius: 0.25rem;
+                font-size: 3.5vw;
+                padding: 3.5vw 0;
+            }
+    
+            /* STATUS */
+            > .statusWrapper {
+                padding: 5vw 0;
+                font-size: 5vw;
+    
+                > .status__hide {
+                    position: relative;
+                    /* left: -100px; */
+                    bottom: -10px;
+                    color: red;
+                    /* transition: 250ms; */
+                    opacity: 0;
+                }
+                > .status__show {
+                    position: relative;
+                    /* left: 0px; */
+                    bottom: 0px;
+                    color: red;
+                    transition: 350ms;
+                    opacity: 1;
+                }
+            }
+        }
+    }
+    
+    
+    /*=====  REMOVE Products  ======*/
+    .admin__removeProduct {
+    
+        > .removeProduct__productsWrapper {
+    
+            > .productsWrapper__product {
+                margin: 10vh 0;
+    
+    
+                > button {
+                    width: 100%;
+                    padding: 3.5vw 0;
+                    border: none;
+                    background-color: transparent;
+                    border-radius: 0.25rem;
+                    font-size: 4vw;
+    
+                    border: solid 2px var(--regular-red);
+                    background-color: var(--background-red);
+                    color: var(--regular-fontcolor);
+                }
+            }
         }
     }
 }
+
+@media screen and (min-width: 768px) {
+    .admin {
+        min-height: 92vh;
+        padding: 5vh 10vw;
+    
+        > h1 { 
+            text-align: center; 
+            padding: 2.5vh 0;
+        }
+    
+        > .admin__addProduct {
+    
+            > form {
+                display: grid;
+            }
+        }
+    
+        > .admin__panel {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1rem;
+            margin: 10vw 0;
+    
+            > button {
+                padding: 2.5vw 0;
+                border: none;
+                background-color: transparent;
+                border-radius: 0.25rem;
+                font-size: 2.5vw;
+            }
+    
+    
+            > .panel__add {
+                border: solid 2px var(--main-color);
+                background-color: var(--background-main);
+                color: var(--regular-fontcolor);
+                /* color: white; */
+            }
+            > .panel__remove {
+                border: solid 2px var(--regular-red);
+                background-color: var(--background-red);
+                color: var(--regular-fontcolor);
+            }
+            > .panel__order {
+                grid-column: 1/3;
+                background-color: var(--main-color);
+                color: white;
+            }
+        }
+    }
+    
+    
+    
+    /*=====  ADD Products  ======*/
+    .admin__addProduct {
+    
+        > form {
+            display: grid;
+            row-gap: 1vw;
+            
+            > label {
+                font-size: 3.5vw;
+            }
+            > input {
+                font-size: 3vw;
+                padding: 2.5vw;
+                margin: 2.5vw 0;
+                border-radius: 0.25rem;
+                border: none;
+                filter: drop-shadow(1px 2px 5px var(--light-shadow));
+                color: var(--main-color)
+            }
+    
+            > .inputfile {
+                width: 0.1px;
+                height: 0.1px;
+                opacity: 0;
+                overflow: hidden;
+                position: absolute;
+                z-index: -1;
+            }
+            > .labelfile {
+                border: solid 2px var(--main-color);
+                /* background-color: var(--background-main); */
+                color: var(--main-color);
+                padding: 2.5vw 0;
+                display: grid;
+                place-content: center;
+                font-size: 2rem;
+            }
+            > button {
+                margin: 1vw 0;
+                border: none;
+                background-color: var(--main-color);
+                color: white;
+                border-radius: 0.25rem;
+                font-size: 3vw;
+                padding: 3vw 0;
+            }
+    
+            /* STATUS */
+            > .statusWrapper {
+                padding: 5vw 0;
+                font-size: 5vw;
+    
+                > .status__hide {
+                    position: relative;
+                    /* left: -100px; */
+                    bottom: -10px;
+                    color: red;
+                    /* transition: 250ms; */
+                    opacity: 0;
+                }
+                > .status__show {
+                    position: relative;
+                    /* left: 0px; */
+                    bottom: 0px;
+                    color: red;
+                    transition: 350ms;
+                    opacity: 1;
+                }
+            }
+        }
+    }
+    
+    
+    /*=====  REMOVE Products  ======*/
+    .admin__removeProduct {
+    
+        > .removeProduct__productsWrapper {
+    
+            > .productsWrapper__product {
+                margin: 10vh 0;
+    
+    
+                > button {
+                    width: 100%;
+                    padding: 3.5vw 0;
+                    border: none;
+                    background-color: transparent;
+                    border-radius: 0.25rem;
+                    font-size: 4vw;
+    
+                    border: solid 2px var(--regular-red);
+                    background-color: var(--background-red);
+                    color: var(--regular-fontcolor);
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .admin {
+        min-height: 92vh;
+        padding: 5vh 20vw;
+    
+        > h1 { 
+            text-align: center; 
+            padding: 2vh 0;
+        }
+    
+        > .admin__addProduct {
+    
+            > form {
+                display: grid;
+            }
+        }
+    
+        > .admin__panel {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1rem;
+            margin: 2.5vw 0;
+    
+            > button {
+                padding: 1.25vw 0;
+                border: none;
+                background-color: transparent;
+                border-radius: 0.25rem;
+                font-size: 1.25vw;
+            }
+    
+    
+            > .panel__add {
+                border: solid 2px var(--main-color);
+                background-color: var(--background-main);
+                color: var(--regular-fontcolor);
+                /* color: white; */
+            }
+            > .panel__remove {
+                border: solid 2px var(--regular-red);
+                background-color: var(--background-red);
+                color: var(--regular-fontcolor);
+            }
+            > .panel__order {
+                grid-column: 1/3;
+                background-color: var(--main-color);
+                color: white;
+            }
+        }
+    }
+    
+    
+    
+    /*=====  ADD Products  ======*/
+    .admin__addProduct {
+    
+        > form {
+            display: grid;
+            margin: 5vw 0;
+            row-gap: 0.5vw;
+    
+            > label {
+                font-size: 1.8vw;
+                color: var(--main-color)
+            }
+            > input, textarea {
+                font-size: 1.6vw;
+                padding: 1vw;
+                margin: 1vw 0;
+                border-radius: 0.25rem;
+                border: none;
+                filter: drop-shadow(1px 2px 5px var(--light-shadow));
+                color: black;
+            }
+    
+            > .inputfile {
+                width: 0.1px;
+                height: 0.1px;
+                opacity: 0;
+                overflow: hidden;
+                position: absolute;
+                z-index: -1;
+            }
+            > .labelfile {
+                display: grid;
+                place-content: center;
+                border-radius: 0.25vw;
+                border: solid 2px gray;
+                background-color: transparent;
+                color: gray;
+                padding: 2vw 0;
+                font-size: 2.5vw;
+                margin: 2vw 0;
+            }
+            > .labelfileUploaded {
+                background-color: var(--background-main);
+                border: solid 2px var(--main-color);
+                color: var(--main-color)
+            }
+            > button {
+                margin: 1vw 0;
+                border: none;
+                background-color: var(--main-color);
+                color: white;
+                border-radius: 0.25rem;
+                font-size: 1.6vw;
+                padding: 1.5vw 0;
+            }
+    
+            /* STATUS */
+            > .statusWrapper {
+                padding: 1vw 0;
+                font-size: 3.5vw;
+                transition: 350ms;
+    
+                > .status__hide {
+                    position: relative;
+                    /* left: -100px; */
+                    bottom: -10px;
+                    color: red;
+                    /* transition: 250ms; */
+                    opacity: 0;
+                }
+                > .status__show {
+                    position: relative;
+                    /* left: 0px; */
+                    bottom: 0px;
+                    color: red;
+                    opacity: 1;
+                }
+            }
+        }
+    }
+    
+    
+    /*=====  REMOVE Products  ======*/
+    .admin__removeProduct {
+    
+        > .removeProduct__productsWrapper {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            column-gap: 2.5vw;
+            row-gap: 1vw;
+    
+            > .productsWrapper__product {
+                margin: 2.5vw 0;
+                
+                > p {
+                    padding: 0.25vw 0;
+                    font-size: 1.25vw;
+                }
+                > button {
+                    width: 100%;
+                    padding: 1.25vw 0;
+                    border: none;
+                    background-color: transparent;
+                    border-radius: 0.25rem;
+                    font-size: 1.25vw;
+                    font-weight: 500;
+                    margin: 2vw 0;
+    
+                    border: solid 2px var(--regular-red);
+                    background-color: var(--background-red);
+                    color: var(--regular-fontcolor);
+                }
+            }
+        }
+    }
+}
+

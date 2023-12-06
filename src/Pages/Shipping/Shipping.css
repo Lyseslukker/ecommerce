@@ -1,0 +1,255 @@
+@media screen and (min-width: 300px) {
+    .shipping {
+        padding: 5vw;
+        > h1 {
+            text-align: center;
+            margin: 10vw 0;
+        }
+        > form {
+            padding: 5vw;
+            display: grid;
+            row-gap: 2.5vw;
+    
+            > .inputError { border: solid 2px red; }
+    
+
+            > input {
+                border-radius: 1vw;
+                border: none;
+                padding: 2.5vw;
+                box-shadow: 1px 1px 20px -10px black;
+            }
+    
+            > button {
+                background-color: var(--main-color);
+                font-weight: 500;
+                font-size: 4vw;
+                border: none;
+                padding: 3.5vw 2.5vw;
+                margin: 5vw 0;
+                border-radius: 1vw;
+                color: white;
+            }
+        }
+    
+        > .shipping__suggestions {
+            padding: 5vw;
+            display: grid;
+            row-gap: 5vw;
+    
+            > .suggestions__roadname {
+                border: solid 2px var(--main-color);
+                background-color: white;
+                padding: 2vw;
+                border-radius: 1vw;
+                box-shadow: 5px 5px 10px -5px black;
+            }
+            /* > .suggestions__roadname:hover {
+                background-color: gray;
+                cursor: pointer;
+                color: white;
+                border: solid 2px black;
+            } */
+        }
+    
+        > .shipping__shipAddress {
+            padding: 5vw 0;
+        }
+        > .shipping__buttons {
+            display: grid;
+            grid-auto-flow: column;
+            grid-template-columns: 1fr 1fr;
+            column-gap: 5vw;
+    
+            > button {
+                padding: 2.5vw;
+            }
+            > .buttons__confirm {
+                background-color: var(--background-main);
+                border: solid 2px var(--main-color);
+                border-radius: 1vw;
+            }
+            > .buttons__reject {
+                background-color: var(--background-red);
+                border: solid 2px var(--regular-red);
+                border-radius: 1vw;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .shipping {
+        min-height: 90vh;
+        padding: 5vw;
+        
+        > h1 {
+            text-align: center;
+            margin: 2.5vw 0;
+        }
+        > form {
+            padding: 5vw;
+            display: grid;
+            row-gap: 2.5vw;
+
+            > .inputError { border: solid 2px red; }
+
+            > label {
+                font-size: 3.5vw;
+            }
+            > input {
+                border-radius: 1vw;
+                border: none;
+                padding: 2.5vw;
+                box-shadow: 1px 1px 20px -10px black;
+                font-size: 3vw;
+            }
+
+            > button {
+                background-color: var(--main-color);
+                font-weight: 500;
+                font-size: 3vw;
+                border: none;
+                padding: 3.5vw 2.5vw;
+                margin: 5vw 0;
+                border-radius: 1vw;
+                color: white;
+            }
+        }
+
+        > .shipping__suggestions {
+            padding: 5vw;
+            display: grid;
+            row-gap: 5vw;
+
+            > .suggestions__roadname {
+                border: solid 2px var(--main-color);
+                background-color: white;
+                padding: 2vw;
+                border-radius: 1vw;
+                box-shadow: 5px 5px 10px -5px black;
+            }
+            /* > .suggestions__roadname:hover {
+                background-color: gray;
+                cursor: pointer;
+                color: white;
+                border: solid 2px black;
+            } */
+        }
+
+        > .shipping__shipAddress {
+            padding: 5vw 0;
+        }
+        > .shipping__buttons {
+            display: grid;
+            grid-auto-flow: column;
+            grid-template-columns: 1fr 1fr;
+            column-gap: 5vw;
+
+            > button {
+                padding: 2.5vw;
+            }
+            > .buttons__confirm {
+                background-color: var(--background-main);
+                border: solid 2px var(--main-color);
+                border-radius: 1vw;
+            }
+            > .buttons__reject {
+                background-color: var(--background-red);
+                border: solid 2px var(--regular-red);
+                border-radius: 1vw;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .shipping {
+        min-height: 80vh;
+        padding: 0 20vw;
+
+        > h1 {
+            text-align: center;
+            margin: 5vw 0;
+        }
+        > form {
+            padding: 2.5vw;
+            display: grid;
+            row-gap: 1.5vw;
+
+            > .inputError { border: solid 2px red; }
+
+            > label {
+                font-size: 2vw;
+            }
+            > input {
+                border-radius: 1vw;
+                border: none;
+                padding: 1.5vw;
+                box-shadow: 1px 1px 20px -10px black;
+                font-size: 1.5vw;
+            }
+
+            > button {
+                background-color: var(--main-color);
+                font-weight: 500;
+                font-size: 2vw;
+                border: none;
+                padding: 2vw 2vw;
+                margin: 5vw 0;
+                border-radius: 1vw;
+                color: white;
+            }
+        }
+
+        > .shipping__suggestions {
+            padding: 5vw;
+            display: grid;
+            
+            row-gap: 5vw;
+
+            > .suggestions__roadname {
+                border: solid 2px var(--main-color);
+                background-color: white;
+                padding: 2vw;
+                border-radius: 1vw;
+                box-shadow: 5px 5px 10px -5px black;
+            }
+            /* > .suggestions__roadname:hover {
+                background-color: gray;
+                cursor: pointer;
+                color: white;
+                border: solid 2px black;
+            } */
+        }
+
+        > .shipping__shipAddress {
+            padding: 5vw 0;
+        }
+        > .shipping__buttons {
+            display: grid;
+            grid-auto-flow: column;
+            grid-template-columns: 1fr 1fr;
+            column-gap: 5vw;
+
+            > button {
+                padding: 2.5vw;
+            }
+            > .buttons__confirm {
+                font-size: 1.5vw;
+                background-color: var(--background-main);
+                border: solid 2px var(--main-color);
+                border-radius: 1vw;
+            }
+            > .buttons__reject {
+                font-size: 1.5vw;
+                background-color: var(--background-red);
+                border: solid 2px var(--regular-red);
+                border-radius: 1vw;
+            }
+        }
+        }
+    }
+
+
+

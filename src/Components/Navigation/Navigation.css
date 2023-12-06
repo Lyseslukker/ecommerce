@@ -1,26 +1,133 @@
-.navigation {
-    height: 8vh;
-    display: grid;
-    grid-auto-flow: column;
-    grid-template-columns: repeat(3, 1fr);
-    padding: 0 5vw;
-    align-items: center;
-
-    > a {
-        font-size: 8vw;
+@media screen and (min-width: 300px) {
+    .navigation {
+        height: 8vh;
         display: grid;
-        align-content: center;
+        grid-auto-flow: column;
+        grid-template-columns: repeat(3, 1fr);
+        padding: 0 5vw;
+        align-items: center;
+    
+        > a {
+            font-size: 8vw;
+            display: grid;
+            align-content: center;
+        }
+        > a:first-child {
+            justify-self: left;
+            color: var(--main-color);
+        }
+        > a:nth-child(2) {
+            justify-self: center;
+            color: var(--main-color);
+        }
+        > a:last-child {
+            justify-self: right;
+            color: var(--regular-fontcolor);
+        }
+    
+        > a >.navigation__cartCount {
+            position: absolute;
+            display: grid;
+            place-content: center;
+            font-size: 2.5vw;
+            font-weight: 500;
+            /* bottom: 8px; */
+            height: 5.5vw;
+            width: 5.5vw;
+            top: 2.5vw;
+            right: 3vw;
+            color: white;
+            background-color: green;
+            padding: 0.5rem;
+            border-radius: 50%;
+        }
     }
-    > a:first-child {
-        justify-self: left;
-        color: var(--main-color);
+    
+    .navBody {
+        display: grid;
     }
-    > a:nth-child(2) {
-        justify-self: center;
-        color: var(--main-color);
+
+}
+
+@media screen and (min-width: 768px) {
+    .navigation {
+        height: 12vh;
+        display: grid;
+        grid-auto-flow: column;
+        grid-template-columns: repeat(3, 1fr);
+        padding: 2.5vw 5vw;
+        align-items: center;
+    
+        > a {
+            font-size: 6vw;
+            display: grid;
+            align-content: center;
+        }
+        > a:first-child {
+            justify-self: left;
+            color: var(--main-color);
+        }
+        > a:nth-child(2) {
+            justify-self: center;
+            color: var(--main-color);
+        }
+        > a:last-child {
+            justify-self: right;
+            color: var(--regular-fontcolor);
+        }
+    
+        > a >.navigation__cartCount {
+            position: absolute;
+            display: grid;
+            place-content: center;
+            font-size: 1.8vw;
+            font-weight: 500;
+            /* bottom: 8px; */
+            height: 5vw;
+            width: 5vw;
+            top: 2.5vh;
+            right: 3vw;
+            color: white;
+            background-color: green;
+            /* padding: 1rem; */
+            border-radius: 50%;
+        }
     }
-    > a:last-child {
-        justify-self: right;
-        color: var(--regular-fontcolor);
+    
+    .navBody {
+        display: grid;
     }
 }
+
+@media screen and (min-width: 992px) {
+    .navigation {
+        height: 5vh;
+        /* padding: 1vw 2.5vw; */
+        display: grid;
+        grid-auto-flow: column;
+        grid-template-columns: repeat(3, 1fr);
+        padding: 2.5vw 5vw;
+        align-content: center;
+
+        > a {
+            font-size: 3vw;
+        }
+        > a >.navigation__cartCount {
+            position: absolute;
+            display: grid;
+            place-content: center;
+            font-size: 0.8vw;
+            font-weight: 500;
+            /* bottom: 8px; */
+            height: 2vw;
+            width: 2vw;
+            top: 2.5vw;
+            right: 7vw;
+            color: white;
+            background-color: green;
+            padding: 0.5rem;
+            border-radius: 50%;
+        }
+    }
+}
+

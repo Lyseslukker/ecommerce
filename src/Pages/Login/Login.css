@@ -1,0 +1,190 @@
+@media screen and (min-width: 300px) {
+    .adminlogin {
+        min-height: 92vh;
+        padding: 5vh 2.5vw;
+    
+        > h1 { 
+            text-align: center; 
+            padding: 2.5vh 0;
+        }
+    
+        > form {
+            padding: 2.5vh 0;
+            display: grid;
+    
+            > input {
+                padding: 2.5vw;
+                margin: 2.5vw 0;
+                border-radius: 0.5rem;
+                border: none;
+                filter: drop-shadow(1px 2px 5px var(--light-shadow));
+                color: var(--main-color)
+            }
+            
+            /* STATUS */
+            > .statusWrapper {
+                padding: 5vw 0;
+                font-size: 5vw;
+    
+                > .status__hide {
+                    position: relative;
+                    /* left: -100px; */
+                    bottom: -10px;
+                    color: red;
+                    /* transition: 250ms; */
+                    opacity: 0;
+                }
+                > .status__show {
+                    position: relative;
+                    /* left: 0px; */
+                    bottom: 0px;
+                    color: red;
+                    transition: 350ms;
+                    opacity: 1;
+                }
+            }
+    
+            > button {
+                background-color: var(--light-background);
+                padding: 2.5vw 5vw;
+                color: var(--regular-fontcolor);
+                font-weight: 500;
+                border: 1px solid var(--main-color);
+                border-radius: 0.5rem;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .adminlogin {
+        min-height: 92vh;
+        padding: 5vh 10vw;
+    
+        > h1 { 
+            text-align: center; 
+            padding: 2.5vh 0;
+            font-size: 7.5vw;
+        }
+    
+        > form {
+            padding: 2.5vh 0;
+            display: grid;
+    
+            > label {
+                font-size: 3vw;
+            }
+            > input {
+                font-size: 2.5vw;
+                padding: 2.5vw;
+                margin: 2.5vw 0;
+                border-radius: 0.5rem;
+                border: none;
+                filter: drop-shadow(1px 2px 5px var(--light-shadow));
+                color: var(--main-color)
+            }
+            
+            /* STATUS */
+            > .statusWrapper {
+                padding: 5vw 0;
+                font-size: 5vw;
+    
+                > .status__hide {
+                    position: relative;
+                    /* left: -100px; */
+                    bottom: -10px;
+                    color: red;
+                    /* transition: 250ms; */
+                    opacity: 0;
+                }
+                > .status__show {
+                    position: relative;
+                    /* left: 0px; */
+                    bottom: 0px;
+                    color: red;
+                    transition: 350ms;
+                    opacity: 1;
+                }
+            }
+    
+            > button {
+                background-color: var(--light-background);
+                padding: 2.5vw 5vw;
+                color: var(--regular-fontcolor);
+                font-weight: 500;
+                border: 2px solid var(--main-color);
+                border-radius: 0.5rem;
+                font-size: 2.5vw;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .adminlogin {
+        min-height: 92vh;
+        padding: 5vh 2.5vw;
+    
+        > h1 { 
+            text-align: center; 
+            padding: 1.5vh 0;
+            font-size: 5vw;
+        }
+    
+        > form {
+            padding: 1.5vw 10vw;
+            display: grid;
+            
+            > label {
+                font-size: 1.6vw;
+            }
+            > input {
+                font-size: 1.6vw;
+                padding: 1.5vw;
+                margin: 2vw 0;
+                border-radius: 0.5rem;
+                border: none;
+                filter: drop-shadow(1px 2px 5px var(--light-shadow));
+                color: var(--main-color)
+            }
+            
+            /* STATUS */
+            > .statusWrapper {
+                padding: 2vw 0;
+                /* font-size: 2.5vw; */
+    
+                > .status__hide {
+                    position: relative;
+                    /* left: -100px; */
+                    bottom: -10px;
+                    color: red;
+                    /* transition: 250ms; */
+                    opacity: 0;
+                    
+                }
+                > .status__show {
+                    position: relative;
+                    /* left: 0px; */
+                    bottom: 0px;
+                    color: red;
+                    transition: 350ms;
+                    opacity: 1;
+                    font-size: 1.6vw;
+                }
+            }
+    
+            > button {
+                margin: 1.5vw 0;
+                background-color: var(--light-background);
+                padding: 1.5vw 0;
+                color: var(--regular-fontcolor);
+                font-weight: 500;
+                border: 3px solid var(--main-color);
+                border-radius: 0.5rem;
+                color: var(--main-color);
+                font-size: 1.6vw;
+            }
+        }
+    }
+}
+

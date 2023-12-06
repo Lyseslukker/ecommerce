@@ -1,0 +1,211 @@
+@media screen and (min-width: 300px) {
+    .product {
+        display: grid;
+        grid-auto-flow: column;
+        grid-template-columns: 2fr 3fr;
+        min-height: 22.5vh;
+        margin: 0 2.5vw;
+        background-color: white;
+        border-radius: 1vw;
+        padding: 1vw;
+        box-shadow: 1px 1px 10px -5px grey;
+    
+        > .product__imgWrapper {
+            background-position: center;
+            background-size: cover;
+            margin: 1vw;
+            border-radius: 1vw;
+        }
+        > .product__infoWrapper {
+            display: grid;
+            grid-template-rows: 1fr 1fr;
+            padding: 1vw;
+            
+            > .infoWrapper__buttons {
+                display: grid;
+                row-gap: 2vw;
+    
+                > .buttons__moreOrLess {
+                    display: grid;
+                    grid-auto-flow: column;
+                    grid-template-columns: 25% 50% 25%;
+    
+                    > .moreOrLess__decrement {
+                        border: solid 2px var(--main-color);
+                        background-color: transparent;
+                        border-radius: 1vw;
+                    }
+                    > .moreOrLess__custom {
+                        text-align: center;
+                        border: none;
+                    }
+                    > .moreOrLess__increment {
+                        border: solid 2px var(--main-color);
+                        background-color: transparent;
+                        border-radius: 1vw;
+                    }
+                }
+                > .buttons__remove {
+                    border: solid 2px var(--regular-red);
+                    background-color: var(--background-red);
+                    border-radius: 1vw;
+                }
+                > .buttons__update {
+                    border: solid 2px var(--regular-yellow);
+                    background-color: var(--background-yellow);
+                    border-radius: 1vw;
+                }
+            }
+        }
+    }
+}
+
+
+@media screen and (min-width: 768px) {
+    .product {
+        display: grid;
+        grid-auto-flow: column;
+        grid-template-columns: 2fr 2fr;
+        min-height: 50vh;
+        margin: 0 2.5vw;
+        background-color: white;
+        border-radius: 1vw;
+        padding: 1vw;
+        box-shadow: 1px 1px 10px -5px grey;
+    
+        > .product__imgWrapper {
+            background-position: center;
+            background-size: cover;
+            margin: 1vw;
+            border-radius: 1vw;
+        }
+        > .product__infoWrapper {
+            display: grid;
+            grid-template-rows: 1fr 1fr;
+            padding: 1vw;
+            
+            > .infoWrapper__buttons {
+                display: grid;
+                row-gap: 2vw;
+    
+                > .buttons__moreOrLess {
+                    display: grid;
+                    grid-auto-flow: column;
+                    grid-template-columns: 25% 50% 25%;
+    
+                    > .moreOrLess__decrement {
+                        border: solid 2px var(--main-color);
+                        background-color: transparent;
+                        border-radius: 1vw;
+                    }
+                    > .moreOrLess__custom {
+                        text-align: center;
+                        border: none;
+                        font-size: 3vw;
+                    }
+                    > .moreOrLess__increment {
+                        border: solid 2px var(--main-color);
+                        background-color: transparent;
+                        border-radius: 1vw;
+                    }
+                }
+                > .buttons__remove {
+                    border: solid 2px var(--regular-red);
+                    background-color: var(--background-red);
+                    border-radius: 1vw;
+                }
+                > .buttons__update {
+                    border: solid 2px var(--regular-yellow);
+                    background-color: var(--background-yellow);
+                    border-radius: 1vw;
+                }
+            }
+        }
+    } 
+}
+
+
+@media screen and (min-width: 992px) {
+    .product {
+        display: grid;
+        grid-auto-flow: column;
+        grid-template-columns: 1fr 1fr;
+        min-height: 25vh;
+        margin: 0 2.5vw;
+        background-color: white;
+        /* border: solid 1px black; */
+        border-radius: 1vw;
+        padding: 0;
+        box-shadow: 1px 1px 10px -5px grey;
+    
+        > .product__imgWrapper {
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            margin: 0;
+            border-radius: 1vw 0 0 1vw;
+        }
+
+        > .product__infoWrapper {
+            display: grid;
+            grid-template-rows: 1.5fr 1fr;
+            /* grid-template-rows: none; */
+            padding: 1vw;
+
+            > .infoWrapper__title {
+                display: grid;
+                align-content: center;
+                > h3 {
+                    font-size: 1vw;
+                }
+            }
+            
+            > .infoWrapper__buttons {
+                display: grid;
+                grid-template-rows: 1fr 1fr;
+                row-gap: 2vw;
+    
+                > .buttons__moreOrLess {
+                    display: grid;
+                    grid-auto-flow: column;
+                    grid-template-columns: 25% 50% 25%;
+    
+                    > .moreOrLess__decrement {
+                        /* height: 5vw;
+                        width: 5vw; */
+                        border: solid 2px var(--main-color);
+                        background-color: transparent;
+                        border-radius: 0.5vw;
+                    }
+                    > .moreOrLess__custom {
+                        text-align: center;
+                        border: none;
+                        font-size: 1.5vw;
+                        height: 5vw;
+                    }
+                    > .moreOrLess__increment {
+                        /* height: 5vw;
+                        width: 5vw; */
+                        border: solid 2px var(--main-color);
+                        background-color: transparent;
+                        border-radius: 0.5vw;
+                    }
+                }
+                > .buttons__remove {
+                    border: solid 2px var(--regular-red);
+                    background-color: var(--background-red);
+                    border-radius: 0.5vw;
+                    /* color: var(--regular-red); */
+                }
+                > .buttons__update {
+                    border: solid 2px var(--regular-yellow);
+                    background-color: var(--background-yellow);
+                    border-radius: 0.5vw;
+                    /* color: var(--regular-yellow) */
+                }
+            }
+        }
+    }
+}
+
+
